@@ -9,3 +9,24 @@
 <div *ngFor="let product of products">
 <p>{{ product.name}}</p>
 </div>
+
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Prezzo</th>
+    <th>Data</th>
+    <th>Immagine</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let product of products">
+    <th>{{product.id}}</th>
+    <th>Nome</th>
+    <th>Prezzo</th>
+    <th>Data</th>
+    <th>Immagine</th>
+  </tr>
+</tbody>
+</table>
