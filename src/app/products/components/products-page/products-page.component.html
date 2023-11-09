@@ -1,0 +1,11 @@
+<div *ngIf="products && products.length > 0; else noProducts">
+  <p>Numero totale di prodotti: {{ products?.length }}</p>
+</div>
+
+<ng-template #noProducts>
+  <div>Non ci sono prodotti in catalogo</div>
+</ng-template>
+
+<div *ngFor="let product of products">
+<p>{{ product.name}}</p>
+</div>
